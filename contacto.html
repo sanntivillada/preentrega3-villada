@@ -1,55 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contacto - Gimnasio Hércules</title>
-  <link rel="shortcut icon" href="./img/cliente1.avif" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/estilos.css" />
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Gimnasio Hércules</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
-        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<section class="seccion mt-5 pt-5 text-center">
-  <div class="container">
-    <h2 class="mb-4">Contacto</h2>
-    <form class="row g-3 justify-content-center">
-      <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="Nombre" required>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto - Gimnasio Hércules</title>
+    <link rel="shortcut icon" href="./img/cliente1.avif" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Gimnasio Hércules</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-md-6">
-        <input type="email" class="form-control" placeholder="Email" required>
+    </nav>
+
+    <section class="seccion mt-5 pt-5 text-center">
+      <div class="container">
+        <h2 class="mb-4 animate__animated animate__fadeInDown">Contacto</h2>
+        <form class="row g-3 justify-content-center" data-aos="fade-up">
+          <div class="col-md-6">
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+              <input type="text" class="form-control" placeholder="Nombre" required />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+              <input type="email" class="form-control" placeholder="Email" required />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-comment-dots"></i></span>
+              <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane me-1"></i>Enviar
+            </button>
+          </div>
+        </form>
       </div>
-      <div class="col-12">
-        <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+    </section>
+
+    <footer class="footer text-center py-4 mt-5">
+      <div class="container">
+        <p class="mb-0 text-light">&copy; 2025 Gimnasio Hércules. Todos los derechos reservados.</p>
       </div>
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </div>
-    </form>
-  </div>
-</section>
-<footer class="footer text-center py-4 mt-5">
-  <div class="container">
-    <p class="mb-0 text-light">&copy; 2025 Gimnasio Hércules. Todos los derechos reservados.</p>
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
