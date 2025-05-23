@@ -1,3 +1,9 @@
+.seccion h2, .hero .container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #121212;
@@ -19,7 +25,6 @@ body {
   padding: 100px 0;
   position: relative;
 }
-
 .hero::before {
   content: "";
   position: absolute;
@@ -30,20 +35,105 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-
 .hero .container {
   position: relative;
   z-index: 2;
+  text-align: center;
+}
+.hero .container h1 {
+  animation: fadeInDown 1s ease;
+}
+.hero .container p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.hero .container a.btn {
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.hero .container a.btn:hover {
+  transform: scale(1.05);
+  background-color: rgb(255, 205.75, 58);
 }
 
 .seccion {
   padding: 80px 0;
 }
+.seccion h2 {
+  text-align: center;
+}
+.seccion p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.seccion img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.seccion img:hover {
+  transform: scale(1.03);
+}
 
 .footer {
   background-color: #212529;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .btn-warning {
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .seccion h2 {
+    font-size: 2rem;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+.hero {
+  height: 100vh;
+  background-image: url("../img/portada-gimnasio.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.hero .container {
+  z-index: 2;
+  position: relative;
+  color: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */
