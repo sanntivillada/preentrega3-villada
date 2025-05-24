@@ -1,4 +1,5 @@
-.seccion h2, .hero .container h1 {
+.seccion h2,
+.hero .container h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
